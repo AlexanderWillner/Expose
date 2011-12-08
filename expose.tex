@@ -1,0 +1,61 @@
+%/**
+% * Thesis proposal template (main file)
+% *
+% * @author     Alexander willner <willner@cs.uni-bonn.de>
+% * @see        http://john.regehr.org/reading_list/proposal.html
+% * @see        http://des.emory.edu/mfp/proposal.html
+% * @see        http://www.ling.upenn.edu/advice/green_proposal.html
+% * @see        http://spaf.cerias.purdue.edu/StudentInfo/spaf.html
+% * @see        http://spaf.cerias.purdue.edu/StudentInfo/dec.html
+% * @see        http://matt.might.net/articles/ways-to-fail-a-phd/
+% */
+
+% /* include config --------------------------------------------------------- */
+\input{expose.meta}
+\input{expose.config}
+% /* ------------------------------------------------------------------------ */
+
+\begin{document}
+    % /* Meta data ---------------------------------------------------------- */
+    \begin{acronym}
+        \input{expose.acronyms}
+    \end{acronym}
+    %\frontmatter
+    \title{\metaTitle}
+    %\titlerunning{\metaTitleShort}
+    \author{\metaAuthor}
+    %\metaAuthorWithInst}
+    %\authorrunning{\metaAuthorShort}
+    %\institute{\metaInstituteFirst \and \metaInstituteSecond}
+    %\toctitle{\metaTitle}
+    %\tocauthor{\metaAuthorShort}
+    \maketitle
+    % /* -------------------------------------------------------------------- */
+
+    % /* abstract ----------------------------------------------------------- */
+    \begin{abstract}
+        \input{src/abstract}
+    \end{abstract}
+    \begin{IEEEkeywords}\metaKeywords\end{IEEEkeywords}
+    % /* -------------------------------------------------------------------- */
+    
+    % /* core --------------------------------------------------------------- */
+    %\mainmatter    
+    \input{src/introduction}
+    \input{src/problem}
+    \input{src/relatedwork}
+    \input{src/ideas}
+    \input{src/shape}
+    \input{src/actions}
+    \input{src/outline}
+    % /* -------------------------------------------------------------------- */
+    
+    % /* bibliography ------------------------------------------------------- */
+    \bibliographystyle{IEEEtran}
+    \bibliography{expose,lib/resources/build/dummy}
+    % uncomment to show unreferenced publications --------------------------- */
+    %\bibliographystyle{unsrt}
+    \cite{uncited}
+    \nocite{*}
+    %------------------------------------------------------------------------ */
+\end{document}

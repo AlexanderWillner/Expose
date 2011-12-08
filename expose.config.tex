@@ -1,0 +1,42 @@
+% bugfixes ---------------------------------------------------------------------
+\let\accentvec\vec               % llncs with amsmath bugfix
+% ------------------------------------------------------------------------------
+
+% docuemnt class ---------------------------------------------------------------
+\documentclass[
+        a4paper,                % use a5paper for ISO A5; use a4paper for ISO A4
+        pdftex,                 % PDF output
+        10pt,                   % font size
+        conference,             % IEEE requirement
+        romanappendices,        % IEEE requirement
+        twocolumn
+]{IEEEtran}
+% ------------------------------------------------------------------------------
+
+% lang config ------------------------------------------------------------------
+%\usepackage{CJKutf8}                         % Japanese language support
+%\usepackage[ngerman]{babel}                  % German language support
+%\usepackage{bibgerm}                         % German bibliography support
+%\usepackage[babel,german=quotes]{csquotes}   % German language support
+% lang config ------------------------------------------------------------------
+
+% basic config -----------------------------------------------------------------
+\input{lib/resources/config/default}
+\usepackage[numbers,square,longnamesfirst]{natbib}  % Bibliography: style
+\definecolor{LinkColor}{rgb}{.3,.3,.6}        % Link color
+\definecolor{grey}{gray}{.75}                 % Hiding color
+\definecolor{MarginColor}{rgb}{.29,.03,.06}   % Margin color
+% basic config -----------------------------------------------------------------
+
+% local config -----------------------------------------------------------------
+\usepackage[nolist,nohyperlinks]{acronym}     % Acronyms
+%\renewcommand{\figurename}{Fig.}
+%\renewcommand{\tablename}{Tab.}
+%\renewcommand{\sectionname}{Sec.}
+%\renewcommand{\equationname}{Eq.}
+% local config -----------------------------------------------------------------
+
+
+% pdf meta data ----------------------------------------------------------------
+\input{lib/resources/config/pdfmetadata}
+% ------------------------------------------------------------------------------
