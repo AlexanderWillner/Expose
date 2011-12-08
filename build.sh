@@ -1,8 +1,8 @@
 #!/bin/bash
 #===============================================================================
 #/**
-# * LaTeX thesis template (build file)
-# * @author  : Alexander willner (willner@cs.uni-bonn.de)
+# * LaTeX thesis proposal template (build file)
+# * @author  : Alexander Willner <willner@cs.uni-bonn.de>
 # */
 #===============================================================================
 
@@ -19,8 +19,6 @@ source ./$DIR_BLD/$0.lib
 #===============================================================================
 #cp ~/path/to/auto-generated-list.bib $FILE_BIB
 #perl -pi -e s,url\\s*=\\s*{.*}\\,?,,g $FILE_BIB
-cp ~/Documents/publications/willner-proposal.bib $FILE_BIB 
-perl -pi -e s,url\\s*=\\s*{.*}\\,?,,g $FILE_BIB
 #===============================================================================
 
 
